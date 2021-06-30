@@ -1,0 +1,8 @@
+echo "Welcome to your 'What to do first' oracle."
+
+if (( RANDOM %2 )); then
+ echo "Start searching for jobs."
+else
+ echo "Your choice."
+fi
+
