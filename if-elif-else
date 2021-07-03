@@ -1,0 +1,17 @@
+#!/bin/bash
+
+File="TestFile" 
+
+echo "This is file $File" > $File
+
+# check if file exists and if it contains data or is empty
+if [ -s $File ] ;
+ then
+ echo "The file $File exists and contains data." ;
+elif [ -e $File ] ;
+ then
+ echo "$File exists and is empty."
+else
+ echo "The file $File does not exist or is empty." ;
+fi
+
